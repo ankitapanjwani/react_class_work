@@ -5,6 +5,8 @@ import Footer from './footer';
 import Body from './body';
 import AddImage from './AddImage';
 import Search from './search';
+// import Particlesdemo from './particlesdemo';
+
 
 function App() {
 
@@ -59,11 +61,17 @@ function App() {
 
     <div>
       <Header title={mainbcontents.name}></Header>
+      
       {/* <Main image={images}></Main> */}
       <AddImage></AddImage>
-      <Search></Search>
-      <Body image={images}></Body> 
+      <Search image={images}></Search>
+
+      
+      <Body image={images}></Body>
+    {/* <Particlesdemo></Particlesdemo> */}
       <Footer message="@copyright"></Footer>
+
+     
     </div>
   );
 }
