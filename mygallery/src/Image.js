@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-
+import {Link} from 'react-router-dom';
 class Image extends Component {
 
     styles = {
         height: 100,
-        width: 200
+        width: 300
       };
   render() {
     const { image, onClick } = this.props;
@@ -30,6 +30,10 @@ class Image extends Component {
               >
                 Hide
               </button>
+                &nbsp;
+                <Link  className="btn btn-primary" to={`/listImage/${image.imgId}`}>Show in Detail</Link>
+
+
             </div>
           </div>
         ) : (
