@@ -21,6 +21,14 @@ class UsersList extends Component {
         // console.log(res.data.data);
         const users = res.data.data;
         this.setState({users});
+    });
+    axios.post('https://reqres.in/api/users', {
+      email: 'urvashi@gmail.com',
+      first_name: 'urvashi',
+      last_name: 'urvashi'
+    })
+    .then(function (response) {
+     alert(JSON.stringify(response.data));
     })
   }
     render() { 

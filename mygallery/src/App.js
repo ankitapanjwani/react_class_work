@@ -9,6 +9,7 @@ import {Route} from 'react-router-dom'
 import Navigation from './navigation';
 import DetailedImage from './detailedImage';
 import UsersList from './Users';
+import ImageList from './container/image-list';
 // import Particlesdemo from './particlesdemo';
 
 
@@ -41,7 +42,7 @@ function App() {
       {/* <Body></Body> */}
     {/* <Particlesdemo></Particlesdemo> */}
     
-   
+    <ImageList></ImageList>
       <Footer message="@copyright"></Footer>
 
      
